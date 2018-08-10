@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E421115211E4E3A00ECD50A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E421114211E4E3A00ECD50A /* AppDelegate.swift */; };
+		9E421117211E4E3A00ECD50A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9E421116211E4E3A00ECD50A /* GameScene.sks */; };
+		9E421119211E4E3A00ECD50A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9E421118211E4E3A00ECD50A /* Actions.sks */; };
+		9E42111B211E4E3A00ECD50A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42111A211E4E3A00ECD50A /* GameScene.swift */; };
+		9E42111D211E4E3A00ECD50A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42111C211E4E3A00ECD50A /* GameViewController.swift */; };
+		9E421120211E4E3A00ECD50A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E42111E211E4E3A00ECD50A /* Main.storyboard */; };
+		9E421122211E4E3B00ECD50A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E421121211E4E3B00ECD50A /* Assets.xcassets */; };
+		9E421125211E4E3B00ECD50A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E421123211E4E3B00ECD50A /* LaunchScreen.storyboard */; };
+		9E421130211E4E3C00ECD50A /* PachinkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42112F211E4E3C00ECD50A /* PachinkoTests.swift */; };
+		9E42113B211E4E3C00ECD50A /* PachinkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42113A211E4E3C00ECD50A /* PachinkoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E42112C211E4E3C00ECD50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E421109211E4E3A00ECD50A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E421110211E4E3A00ECD50A;
+			remoteInfo = Pachinko;
+		};
+		9E421137211E4E3C00ECD50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E421109211E4E3A00ECD50A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E421110211E4E3A00ECD50A;
+			remoteInfo = Pachinko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E421111211E4E3A00ECD50A /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E421114211E4E3A00ECD50A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E421116211E4E3A00ECD50A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9E421118211E4E3A00ECD50A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		9E42111A211E4E3A00ECD50A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9E42111C211E4E3A00ECD50A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9E42111F211E4E3A00ECD50A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E421121211E4E3B00ECD50A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E421124211E4E3B00ECD50A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E421126211E4E3B00ECD50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E42112B211E4E3C00ECD50A /* PachinkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PachinkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E42112F211E4E3C00ECD50A /* PachinkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachinkoTests.swift; sourceTree = "<group>"; };
+		9E421131211E4E3C00ECD50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E421136211E4E3C00ECD50A /* PachinkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PachinkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E42113A211E4E3C00ECD50A /* PachinkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachinkoUITests.swift; sourceTree = "<group>"; };
+		9E42113C211E4E3C00ECD50A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E42110E211E4E3A00ECD50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421128211E4E3C00ECD50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421133211E4E3C00ECD50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E421108211E4E3A00ECD50A = {
+			isa = PBXGroup;
+			children = (
+				9E421113211E4E3A00ECD50A /* Pachinko */,
+				9E42112E211E4E3C00ECD50A /* PachinkoTests */,
+				9E421139211E4E3C00ECD50A /* PachinkoUITests */,
+				9E421112211E4E3A00ECD50A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E421112211E4E3A00ECD50A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E421111211E4E3A00ECD50A /* Pachinko.app */,
+				9E42112B211E4E3C00ECD50A /* PachinkoTests.xctest */,
+				9E421136211E4E3C00ECD50A /* PachinkoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E421113211E4E3A00ECD50A /* Pachinko */ = {
+			isa = PBXGroup;
+			children = (
+				9E421114211E4E3A00ECD50A /* AppDelegate.swift */,
+				9E421116211E4E3A00ECD50A /* GameScene.sks */,
+				9E421118211E4E3A00ECD50A /* Actions.sks */,
+				9E42111A211E4E3A00ECD50A /* GameScene.swift */,
+				9E42111C211E4E3A00ECD50A /* GameViewController.swift */,
+				9E42111E211E4E3A00ECD50A /* Main.storyboard */,
+				9E421121211E4E3B00ECD50A /* Assets.xcassets */,
+				9E421123211E4E3B00ECD50A /* LaunchScreen.storyboard */,
+				9E421126211E4E3B00ECD50A /* Info.plist */,
+			);
+			path = Pachinko;
+			sourceTree = "<group>";
+		};
+		9E42112E211E4E3C00ECD50A /* PachinkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E42112F211E4E3C00ECD50A /* PachinkoTests.swift */,
+				9E421131211E4E3C00ECD50A /* Info.plist */,
+			);
+			path = PachinkoTests;
+			sourceTree = "<group>";
+		};
+		9E421139211E4E3C00ECD50A /* PachinkoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E42113A211E4E3C00ECD50A /* PachinkoUITests.swift */,
+				9E42113C211E4E3C00ECD50A /* Info.plist */,
+			);
+			path = PachinkoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E421110211E4E3A00ECD50A /* Pachinko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E42113F211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "Pachinko" */;
+			buildPhases = (
+				9E42110D211E4E3A00ECD50A /* Sources */,
+				9E42110E211E4E3A00ECD50A /* Frameworks */,
+				9E42110F211E4E3A00ECD50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pachinko;
+			productName = Pachinko;
+			productReference = 9E421111211E4E3A00ECD50A /* Pachinko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E42112A211E4E3C00ECD50A /* PachinkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E421142211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "PachinkoTests" */;
+			buildPhases = (
+				9E421127211E4E3C00ECD50A /* Sources */,
+				9E421128211E4E3C00ECD50A /* Frameworks */,
+				9E421129211E4E3C00ECD50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E42112D211E4E3C00ECD50A /* PBXTargetDependency */,
+			);
+			name = PachinkoTests;
+			productName = PachinkoTests;
+			productReference = 9E42112B211E4E3C00ECD50A /* PachinkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E421135211E4E3C00ECD50A /* PachinkoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E421145211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "PachinkoUITests" */;
+			buildPhases = (
+				9E421132211E4E3C00ECD50A /* Sources */,
+				9E421133211E4E3C00ECD50A /* Frameworks */,
+				9E421134211E4E3C00ECD50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E421138211E4E3C00ECD50A /* PBXTargetDependency */,
+			);
+			name = PachinkoUITests;
+			productName = PachinkoUITests;
+			productReference = 9E421136211E4E3C00ECD50A /* PachinkoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E421109211E4E3A00ECD50A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = hungryforcookies;
+				TargetAttributes = {
+					9E421110211E4E3A00ECD50A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9E42112A211E4E3C00ECD50A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9E421110211E4E3A00ECD50A;
+					};
+					9E421135211E4E3C00ECD50A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9E421110211E4E3A00ECD50A;
+					};
+				};
+			};
+			buildConfigurationList = 9E42110C211E4E3A00ECD50A /* Build configuration list for PBXProject "Pachinko" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E421108211E4E3A00ECD50A;
+			productRefGroup = 9E421112211E4E3A00ECD50A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E421110211E4E3A00ECD50A /* Pachinko */,
+				9E42112A211E4E3C00ECD50A /* PachinkoTests */,
+				9E421135211E4E3C00ECD50A /* PachinkoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E42110F211E4E3A00ECD50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E421120211E4E3A00ECD50A /* Main.storyboard in Resources */,
+				9E421117211E4E3A00ECD50A /* GameScene.sks in Resources */,
+				9E421122211E4E3B00ECD50A /* Assets.xcassets in Resources */,
+				9E421125211E4E3B00ECD50A /* LaunchScreen.storyboard in Resources */,
+				9E421119211E4E3A00ECD50A /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421129211E4E3C00ECD50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421134211E4E3C00ECD50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E42110D211E4E3A00ECD50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E42111B211E4E3A00ECD50A /* GameScene.swift in Sources */,
+				9E42111D211E4E3A00ECD50A /* GameViewController.swift in Sources */,
+				9E421115211E4E3A00ECD50A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421127211E4E3C00ECD50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E421130211E4E3C00ECD50A /* PachinkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E421132211E4E3C00ECD50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E42113B211E4E3C00ECD50A /* PachinkoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E42112D211E4E3C00ECD50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E421110211E4E3A00ECD50A /* Pachinko */;
+			targetProxy = 9E42112C211E4E3C00ECD50A /* PBXContainerItemProxy */;
+		};
+		9E421138211E4E3C00ECD50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E421110211E4E3A00ECD50A /* Pachinko */;
+			targetProxy = 9E421137211E4E3C00ECD50A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E42111E211E4E3A00ECD50A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E42111F211E4E3A00ECD50A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E421123211E4E3B00ECD50A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E421124211E4E3B00ECD50A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E42113D211E4E3C00ECD50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E42113E211E4E3C00ECD50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E421140211E4E3C00ECD50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E421141211E4E3C00ECD50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9E421143211E4E3C00ECD50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.PachinkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Debug;
+		};
+		9E421144211E4E3C00ECD50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = PachinkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.PachinkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pachinko.app/Pachinko";
+			};
+			name = Release;
+		};
+		9E421146211E4E3C00ECD50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = PachinkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.PachinkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pachinko;
+			};
+			name = Debug;
+		};
+		9E421147211E4E3C00ECD50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2HFB5LEW;
+				INFOPLIST_FILE = PachinkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungryforcookies.PachinkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pachinko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E42110C211E4E3A00ECD50A /* Build configuration list for PBXProject "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E42113D211E4E3C00ECD50A /* Debug */,
+				9E42113E211E4E3C00ECD50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E42113F211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E421140211E4E3C00ECD50A /* Debug */,
+				9E421141211E4E3C00ECD50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E421142211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "PachinkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E421143211E4E3C00ECD50A /* Debug */,
+				9E421144211E4E3C00ECD50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E421145211E4E3C00ECD50A /* Build configuration list for PBXNativeTarget "PachinkoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E421146211E4E3C00ECD50A /* Debug */,
+				9E421147211E4E3C00ECD50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E421109211E4E3A00ECD50A /* Project object */;
+}
