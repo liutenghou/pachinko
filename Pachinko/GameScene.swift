@@ -17,18 +17,18 @@ class GameScene: SKScene {
         background.blendMode = .replace
         background.zPosition = -1
         addChild(background)
+        
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
     }
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)
-            let box = SKSpriteNode(color: UIColor.red, size: CGSize(width: 64, height: 64))
-            box.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 64, height: 64))
-            box.position = location
-            addChild(box)
+            let ball = SKSpriteNode(imageNamed: "ballRed.png")
+            ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
+            ball.physicsBody?.restitution = 0.4
+            ball.position = location
+            addChild(ball)
         }
     }
-    
 }
