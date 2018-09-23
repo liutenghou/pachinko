@@ -45,6 +45,7 @@
 		9E42117E2122392D00ECD50A /* ballGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E4211622122392D00ECD50A /* ballGreen.png */; };
 		9E42117F2122392D00ECD50A /* bouncer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E4211632122392D00ECD50A /* bouncer.png */; };
 		9E4211802122392D00ECD50A /* ballBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E4211642122392D00ECD50A /* ballBlue.png */; };
+		BC08E657215841D100D8FD0C /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08E656215841D000D8FD0C /* Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		9E4211622122392D00ECD50A /* ballGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballGreen.png; sourceTree = "<group>"; };
 		9E4211632122392D00ECD50A /* bouncer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bouncer.png; sourceTree = "<group>"; };
 		9E4211642122392D00ECD50A /* ballBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballBlue.png; sourceTree = "<group>"; };
+		BC08E656215841D000D8FD0C /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				9E421118211E4E3A00ECD50A /* Actions.sks */,
 				9E42111A211E4E3A00ECD50A /* GameScene.swift */,
 				9E42111C211E4E3A00ECD50A /* GameViewController.swift */,
+				BC08E656215841D000D8FD0C /* Random.swift */,
 				9E42111E211E4E3A00ECD50A /* Main.storyboard */,
 				9E421121211E4E3B00ECD50A /* Assets.xcassets */,
 				9E421123211E4E3B00ECD50A /* LaunchScreen.storyboard */,
@@ -390,6 +393,7 @@
 				9E42111B211E4E3A00ECD50A /* GameScene.swift in Sources */,
 				9E42111D211E4E3A00ECD50A /* GameViewController.swift in Sources */,
 				9E421115211E4E3A00ECD50A /* AppDelegate.swift in Sources */,
+				BC08E657215841D100D8FD0C /* Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

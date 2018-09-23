@@ -11,6 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    //score
     var scoreLabel: SKLabelNode!
     
     var score = 0 {
@@ -19,11 +20,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    //editing
+    var editLabel: SKLabelNode!
+    
+    var editMode: Bool = false {
+        didSet{
+            if editMode{
+                editLabel.text = "Done"
+            }else{
+                editLabel.text = "Edit"
+            }
+        }
+    }
+    
     func didBegin(_ contact: SKPhysicsContact) {
         //in case there are multiple collisions detected between two objects
         guard let nodeA = contact.bodyA.node else {return}
         guard let nodeB = contact.bodyB.node else {return}
-        
         
         if nodeA.name == "ball"{
             collisionBetween(ball: nodeA, object: nodeB)
@@ -62,19 +75,52 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.position = CGPoint(x: 32, y: 1280)
         addChild(scoreLabel)
         
+        //edit label
+        editLabel = SKLabelNode(fontNamed: "Chalkduster")
+        editLabel.text = "Edit"
+        editLabel.horizontalAlignmentMode = .left
+        editLabel.position = CGPoint(x: 32, y: 1200)
+        addChild(editLabel)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)
-            let ball = SKSpriteNode(imageNamed: "ballRed.png")
-            ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
-            ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
-            ball.physicsBody?.restitution = 0.4
-            ball.position = location
-            ball.name = "ball"
             
-            addChild(ball)
+            let objects = nodes(at: location)
+            
+            if objects.contains(editLabel){
+                editMode = !editMode
+            }else{
+                
+                if editMode{
+                    //create a box
+                    let size = CGSize(width: GKRandomDistribution(lowestValue: 16, highestValue: 128).nextInt(), height: 16)
+                    let box = SKSpriteNode(color: RandomColor(), size: size)
+                    
+                    box.zRotation = RandomCGFloat(min: 0, max: 3)
+                    box.position = location
+                    
+                    box.physicsBody = SKPhysicsBody(rectangleOf: size)
+                    box.physicsBody?.isDynamic = false
+                    
+                    addChild(box)
+                    
+                }else{
+                    //create a ball
+                    //TODO: create a ball only at the top
+                
+                    let ball = SKSpriteNode(imageNamed: "ballRed.png")
+                    ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
+                    ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
+                    ball.physicsBody?.restitution = 0.4
+                    ball.position = location
+                    ball.name = "ball"
+                    
+                    addChild(ball)
+                }
+            }
         }
     }
     
